@@ -4,74 +4,77 @@ public class Produto {
     private int id;
     private String nome;
     private String descricao;
-    private double preco;
-    private int quantidadeEstoque;
-    private int idFornecedor;
+    private Categoria categoria;
+    private double precoCusto;
+    private double precoVenda;
+    private int quantidade;
+    private int minEstoque;
+    private Fornecedor fornecedor;
 
-    //    private String caminhoFoto;
-
-    public Produto(int id, String nome, String descricao, double preco, int quantidadeEstoque, int idFornecedor) {
+    public Produto(int id, String nome, String descricao, Categoria categoria, double precoCusto, int quantidade, Fornecedor fornecedor) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
-        this.preco = preco;
-        this.quantidadeEstoque = quantidadeEstoque;
-        this.idFornecedor = idFornecedor;
+        this.categoria = categoria;
+        this.precoCusto = precoCusto;
+        this.quantidade = quantidade;
+        this.fornecedor = fornecedor;
     }
 
     public void dadosProduto() {
-        System.out.println("----------------------------");
-        System.out.println("ID - " + id);
-        System.out.println("Nome - " + nome);
-        System.out.println("Descrição - " + descricao);
-        System.out.println("Preço - " + preco);
+        System.out.println("---------------------");
+        System.out.println("ID - " + this.id);
+        System.out.println("Nome - " + this.nome);
+        System.out.println("Descrição - " + this.descricao);
+        System.out.println("Preço de Venda - " + this.precoVenda);
+        System.out.println("Preço de Custo - " + this.precoCusto);
     }
 
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getNome() {
         return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 
     public String getDescricao() {
         return descricao;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public double getPrecoCusto() {
+        return precoCusto;
     }
 
-    public int getIdFornecedor() {
-        return idFornecedor;
+    public void setPrecoCusto(double precoCusto) {
+        this.precoCusto = precoCusto;
     }
 
-    public void setIdFornecedor(int idFornecedor) {
-        this.idFornecedor = idFornecedor;
+    public double getPrecoVenda() {
+        return precoVenda;
     }
 
-    public double getPreco() {
-        return preco;
+    public void setPrecoVenda(double precoVenda) {
+        this.precoVenda = precoVenda;
     }
 
-    public void setPreco(double preco) {
-        this.preco = preco;
+    public int getQuantidade() {
+        return quantidade;
     }
 
-    public int getQuantidadeEstoque() {
-        return quantidadeEstoque;
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
-    public void setQuantidadeEstoque(int quantidadeEstoque) {
-        this.quantidadeEstoque = quantidadeEstoque;
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setMinEstoque(int minEstoque) {
+        this.minEstoque = minEstoque;
+    }
+
+    public Fornecedor getFornecedor() {
+        return fornecedor;
     }
 }
