@@ -5,7 +5,7 @@
 ---
 ### Versão 1
 
-Funcionalidades:
+#### Funcionalidades:
 - Cadastro de Produtos;
 - Leitura de Produtos;
 - Edição de Produtos;
@@ -13,4 +13,3 @@ Funcionalidades:
 - Registro de Saídas;
 - Edição de Quantidades;
 - Consulta de Estoque;
-
