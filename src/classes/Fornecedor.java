@@ -1,47 +1,47 @@
 package classes;
 
 public class Fornecedor {
-    private int id;
-    private String nome;
-    private String telefone;
-    private String email;
+    private int idFornecedor;
+    private String nomeFornecedor;
+    private String telefoneFornecedor;
+    private String emailFornecedor;
 
-    public Fornecedor(int id, String nome, String telefone, String email) {
-        this.id = id;
-        this.nome = nome;
-        this.telefone = telefone;
-        this.email = email;
+    public Fornecedor(int idFornecedor, String nomeFornecedor, String telefoneFornecedor, String emailFornecedor) {
+        this.idFornecedor = idFornecedor;
+        this.nomeFornecedor = nomeFornecedor;
+        this.telefoneFornecedor = telefoneFornecedor;
+        this.emailFornecedor = emailFornecedor;
     }
 
-    public int getId() {
-        return id;
+    public int getIdFornecedor() {
+        return idFornecedor;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdFornecedor(int idFornecedor) {
+        this.idFornecedor = idFornecedor;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeFornecedor() {
+        return nomeFornecedor;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeFornecedor(String nomeFornecedor) {
+        this.nomeFornecedor = nomeFornecedor;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public String getTelefoneFornecedor() {
+        return telefoneFornecedor;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setTelefoneFornecedor(String telefoneFornecedor) {
+        this.telefoneFornecedor = telefoneFornecedor;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEmailFornecedor() {
+        return emailFornecedor;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmailFornecedor(String emailFornecedor) {
+        this.emailFornecedor = emailFornecedor;
     }
 }
