@@ -1,4 +1,4 @@
-package classes;
+package model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,6 +65,11 @@ public class Estoque {
 
     public void removerFornecedorEstoque(Fornecedor fornecedor) {
         fornecedores.remove(fornecedor);
+        for (Produto produto : produtos) {
+            if (produto.getFornecedor().getIdFornecedor() == fornecedor.getIdFornecedor()) {
+                produtos.remove(produto);
+            }
+        }
     }
 
     public void listarFornecedores() {
